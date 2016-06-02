@@ -25,8 +25,8 @@ int main ( void )
   printf("content-type: text/html;\n\n<!DOCTYPE html>\n <head></head><body>");
 //  ReadString(str, &x, &y);
 //  sscanf(str, "x=%i&y=%i", x, y);
-  printf("<form action='' type='POST'>");
-  sscanf(str, "x=%i&y=%i", x, y);
+  printf("<form action='' type='GET'>");
+  sscanf(str, "x=%i&y=%i", &x, &y);
   printf("<br>Input your values<br>\n");
   printf("<br>First namumber:<br>\n");
   printf("<input placeholder='X' value='%i' name='x'><br>\n", x);
