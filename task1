@@ -8,7 +8,7 @@ int main ( void )
   int i = 0, j = 0;
   char *str = getenv("QUERY_STRING");
   printf("content-type: text/html;\n\n<!DOCTYPE html>\n <head></head><body>");
-  printf("<form action='' type='GET'>");
+  printf("<form action='' method='GET'>");
   sscanf(str, "x=%i&y=%i", &x, &y);
   printf("<br>Input your values<br>\n");
   printf("<br>First namumber:<br>\n");
